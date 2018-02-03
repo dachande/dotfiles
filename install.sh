@@ -11,6 +11,7 @@ PACKAGES=(
 FOLDERS=(
   bash
   fzf
+  git
 )
 
 install_packages() {

@@ -1,0 +1,23 @@
+[user]
+  name = Daniel Schultheis
+  email = d.schultheis@kabel-salat.net
+[push]
+  default = simple
+[pull]
+  rebase = true
+  default = current
+[diff]
+  algorithm = histogram
+  compactionheuristic = true
+  mnemonicprefix = true
+  renames = copy
+  tool = vimdiff
+[apply]
+  whitespace = fix
+[difftool]
+  prompt = false
+[github]
+  user = dachande
+[color]
+  interactive = auto
+  ui = auto

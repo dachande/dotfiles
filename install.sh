@@ -4,11 +4,13 @@ set -e
 
 PACKAGES=(
   fzf
+  stow
   z
 )
 
 FOLDERS=(
   bash
+  fzf
 )
 
 install_packages() {

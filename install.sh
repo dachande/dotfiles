@@ -41,6 +41,10 @@ install_homebrew() {
       echo "Unknown OS. Cannot continue."
       exit 1
   esac
+
+  echo "Temporarily add linuxbrew to path"
+  test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
+  test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
 }
 
 install_composer() {

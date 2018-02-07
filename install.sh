@@ -72,14 +72,13 @@ main() {
     install_homebrew
   fi
 
-  # install composer if it's missing
-  if ! hash composer 2>/dev/null; then
-    install_composer
-  fi
-
   # install needed packages
   install_packages
 
+  # install composer if it's missing
+  #if ! hash composer 2>/dev/null && ! hash php 2>/dev/null; then
+  #  install_composer
+  #fi
   # links folders
   link_folders
 }

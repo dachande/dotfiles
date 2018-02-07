@@ -13,6 +13,7 @@ FOLDERS=(
   bash
   fzf
   git
+  xfce
 )
 
 install_packages() {

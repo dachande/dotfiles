@@ -12,6 +12,7 @@ PACKAGES=(
 FOLDERS=(
   bash
   fzf
+  gnome
   git
   xfce
 )

@@ -79,6 +79,10 @@ main() {
   #if ! hash composer 2>/dev/null && ! hash php 2>/dev/null; then
   #  install_composer
   #fi
+
+  # Remove default .bashrc
+  [ ! -h ~/.bashrc ] && mv ~/.bashrc ~/.bashrc.bak
+
   # links folders
   link_folders
 }
